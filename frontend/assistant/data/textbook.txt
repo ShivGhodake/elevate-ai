@@ -1,0 +1,2582 @@
+--- Page 1 ---
+‘Data Centers |
+
+Data Center Qeﬁnition. Data Center Demands (Adding, Méving, Deleting Resources, Failure
+Recovery, Multitenancy, Traffic Engineering and Path Efficiency), Tunneling Technologies for the
+
+Data Center, SDN Use Cases in the Data Center, SDN Solutions for the Data Center Network -
+VLANs - EVPN - VxLAN - NVGRE = ‘
+
+Contents
+
+3.1 . Definition
+
+3.2  Data Center Architecture : Key Design Components
+3.3  The 4 Tiers of Data Centers |
+
+34 Data Centre Demands
+
+3.5  Tunneling Technologies for the Data Center
+
+8.6 Virtual Local Area Network (VLAN)
+
+3.7  Ethernet VPN (EVPN)
+
+3.8 SDN Use Cases
+
+3.9  Review Questions with Answers
+
+Scanned with CamScanner
+
+
+--- Page 2 ---
+e, e
+
+infrastruc g&veshmdac&ubappliuﬂmm& ata. Ther
+andard ib help with planning, building and maintaining data ¢
+fadliﬁa to guarantee the data is highly accessible and safe.
+
+A data centre is a physical location where computer systems are securely
+
+being used to store and exchange data for client systems to process. In a data ¢
+
+~ these computer systems frequently contain servers, data storage sYstems,
+gear and security systems.
+
+« A simple analogy to a video streaming service might be helpful to understmd
+data centre operates. The real video data is kept on a server that is actually ho
+data centre when a user wishes to play an online video on a streaming se:
+
+video will be requested to be collected from the data centre by your laptop or .‘; 7
+
+(the client system) and once fetched, it will be played on the device. f
+
+l
+
+4
+1
+
+Types of Data Center
+
+Data centres come in a variety of sizes, from a single small server room to larg
+’ clusters of buildings spread across a large area, but they all have one thing in common
+They are vital business assets where businesses frequently invest in and implement the
+most recent developments in data centre networking, computing and storag
+technologies. :
+The contemporary data centre has changed from being a place where an on-premises
+infrastructure was housed to one that links on-premises systems with cot
+infrastructures, where networks, applications and workloads are virtualized across na
+private and public clouds.
+* Managed service data centers offer aspects such as data storage, computing a
+other services as a third party, serving customers directly.
+* Cloud data centers are distributed and are sometimes offered to customets
+the help of a third-party managed service provider.
+
+¢ Enterprise data centers are typically constructed and used by a single organiz&
+for their own internal purposes. These are common among tech giants.
+
+* Colocation data centers function as a kind of rental property where the space 2
+resources of a data center are made available to the people willing to rent it. |
+
+-
+
+i . - TECHNICAL PUBLICATIONS ™ - an up-thrust for knowledge A
+
+Scanned with CamScanner
+
+
+--- Page 3 ---
+ats that driv mwmmmmmm erations to the s
+
+applici or Mﬂuﬂ!"‘ tarde 3o, sonrly Las emmm .
+
+1 Sen ors : These are computers that can handle large amounts of data and
+
+e *apﬁmﬁons They have high - performance CPUs, RAM and occasionally GPUs.
+
+~ single data centre rack is made up of many server modules. A solitary deh/ei} or
+rack may be devoted to a job, application, or particular client, depending on the use
+case. In general, hundreds of servers working on diverse activities and apphcatlons
+are housed in contemporary data centers.
+
+2. Storage devices : Storage systems, such as Hard Disc Drives (HDDs), Solid - State
+Drives (SSDs), or traditional robotic tape drives, take care of the servers' storage
+needs. In addition to providing simple access to end users and disaster recovery in
+the event of cyber attacks or natural catastrophes, these units store business -
+critical data and programmes with numerous backups.
+
+3. Infrastructure for networks and communications : This component hnks end-user
+
+locations to the servers, storage systems and related data centre services. It mostly
+. consists of switches, routers, ADCs and endless cables that enable information
+move around the data centre.
+
+4. Security : This is the last element. It consists of components that are in charge of
+preserving the security of the data and applications stored in data centres. The
+solutions might include complete network and application security solutions as
+well as firewalls and encryption.
+
+Data Center Architecture Components
+
+Compute, storage and network are the three main categories of components found in
+data centres. But in a contemporary DC, these elements merely represent the tip of the
+iceberg, To fulfill the service level agreements of a corporate data centre, support
+infrastructure is crucial.
+
+* Data Center Computing
+
+The heart of a data centre is its servers. Applications executed on servers may employ
+
+physical, virtual, distributed, containerized, or edge computing model processing and
+
+memory, which is dispersed among remote nodes. Processors that are best suited for
+the job must be used in data centres; for example, general-purpose CPUs may not be
+
+TECHNICAL PUBLICATIONS ~ - an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+--- Page 4 ---
+;
+
+combi ‘” -mmm **** ss
+Mmmmmmﬂmgelsethatmso&wm - defined.
+
+' Data Center Networks
+To link servers to one other and to the outside world, dahcmbermtwork
+- such as cables, switches, routers and firewalls are used. Whendengned
+correctly, they can handle large amounts of traffic without sacrificing performan
+~ Core switches at the data center's edge link it to the Internet and a middle aggr at
+hyerco:u\ectstheoorelayertoﬂ\eacoesslayer,whichiswheretheserversam ocateg
+(p—ptamses networks now have the agility and scalability of cloud networks t
+Iphndvahonshkehyperscale network secunty and software - defined networkmg,
+
+Data Center Support Infrastructure '
+A strong and dependable support infrastructure made up of power subsystems,
+Uninterruptible Power Supply (UPS), backup generators, ventilation and cooling
+
+equipment, fire suppression systems and building security systems protects data centres,
+which are considered to be a key asset.
+
+Data centre design, building and maintenance are aided by industry stand:
+provided by groups like the Telecommunications Industry Association (TIA) a
+Uptime Institute. The Uptime Institute, for example, describes these four tiers :
+Tier|: Basic capacity must include a UPS,
+
+Tierll:  Redundant capacity and adds redundant power and cooling.
+
+g g Concurrently maintainable and ensures that any component can be taken out®
+service without affecting production,
+
+TierIV: Fault tolerant, allowing
+
+any production capacity to be insulated from any Kin
+
+1’
+
+Scanned with CamScanner
+
+
+--- Page 5 ---
+ur*"”' v measures that supn : a facility su
+Jescribec 'Td"éﬁar Mmeygrwm
+, netwox-ks data centre firewalls, data access eamols; gyt
+morary counterpart Web Apphcation and API Protection (WAKH stems
+Wﬂy configured. Additionally, it's critical that you comprehend Hﬁe
+ures the cloud service provider or data storage provider uses for their own DC
+pefore using them. Make the biggest security investment you can to protect your data
+
+The 4 Tiers of Data Centers
+An organisation must take into account a variety of elements while building up a data
+centre in order to choose the best infrastructure, mcludmg its industry, location, finances
+and the urgency of data access. To assist with this, a set of standards for data centre
+design and execution were established in 2005 by the American National Standards
+Institute (ANSI) and the Telecommunications Industry Association (TIA). These
+standards assess data centres based on factors including
+e Uptime,
+¢ Investment,
+* Redundancy and
+
+Fault tolerance level
+
+into four separate groups or tiers.
+
+1. Basic
+
+* Only the most basic infrastructure, such as a single power'distribution channel,
+specialised cooling equipment and UPS to servers, is carried by Tier 1 data centres.
+
+* Office complexes or enterprises that do not require quick access to data should use
+Tier 1 data centres.
+
+¢ Due to the absence of gear designed for redundancy, these facilities also have the
+lowest server hosting costs.
+
+* These facilities are intended to provide an uptime of 99.671 % annually with the
+barest amount of redundancy, such as backups. They will also need to be shut
+down for repairs and maintenance.
+
+.
+
+.l ' TECHNICAL PUBLICATIONS - an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+
+--- Page 6 ---
+Scanned with CamScanner
+
+
+
+--- Page 7 ---
+| ilure Recovery ﬂawd!:db
+Anything that endangers the Operations of a company is a failure. Each
+munmty planning procedure should be integrated with your Faﬂurd‘!@dov
+ﬂm To ensure overall process, technology and application preparedness, deﬁnﬁd |
+recovery point and recovery time objectives must be established.
+
+With a business continuity and failure recovery plan in place, one can lessen the effects
+
+of extreme weather events and rise to the ‘occasion in the event that your data centre
+sustains structural damage, water, wind, or fire.
+
+Maintaining technical operations and speedy business operétions restor‘ation are the
+objectives of a failure recovery strategy. '
+Five effective and efficient steps to data center failure recovery are :
+¢ Understanding the impact of a failure on your organization as a whole
+» Pre-determining failure recovery team members
+» Creating failure recovery plan
+¢ Determining Recovery Time Objective (RTO) and Recovery Point Ob]ectlve (RPO)
+
+ Testing disaster recovery plan
+
+Multitenancy
+
+Colocation data centers, commonly referred to as Multi-Tenant Data Centres (MTDCs),
+are places where businesses can rent space to host their data. MTDCs offer the area and
+networking tools needed to link a company to service providers for a reasonable fee.
+Businesses can hire a variety of items to suit their needs, from a server rack to a fully
+functional module. The business advantages of a data centre are made avallable through
+the scalability of consumption without the high cost.
+
+Advantages of a multi - tenant data center
+
+¢ Implementation and shared infrastructure efficiency
+
+Cost control and operational efficiency
+* Outsourcing infrastructure needs
+The true agility of a multi - tenant data center
+
+- an up-thrust for knowledge
+
+TECHNICAL PUBLICATIONS
+
+Scanned with CamScanner
+
+
+--- Page 8 ---
+,,,,,,,
+
+- Many: witches, hosts and virtual machines
+~  Large number of component failures
+-~ Virtual Machine (VM) migration
+
+o Traffic characteristics
+- High traffic volume and dense traffic matrix
+- Volatile, unpredictable traffic patterns
+
+e Performance requirements
+- Delay - sensitive applications
+- Resource isolation between tenants
+
+Traffic Engineering Opportunities
+o Efficient network .
+- Low propagation delay and high capacity
+* Specialized topology
+- Fattree, Clos network, etc.
+- Opportunities for hierarchical addressing
+~* Control over both network and hosts
+= Joint optimization of routing and server placement
+- Can move network functionality into the end host
+* Flexible movement of workload '
+= Services replicated at multiple servers and data centers
+= Virtual Machine (VM) migration
+
+Tunneling Technologies for the Data Center
+
+Mlhere are a several number of tunneling technologies which are used in the data center
+Andsome of are data center - oriented tunneling technologies predate SDN
+
+- an up-thrust brknmhdyo |
+
+Scanned with CamScanner
+
+
+--- Page 9 ---
+o 3 :
+d .
+- Buysey  jouun yopms
+S 68.7 = Uod £q _uw.—whm_.“hhwum J0 di pue DY 1
+. : 3 _ ) NYIXA Ajjeoiwe
+. peojAed pue 82inos : JSULIIP JIOMIBN dan (e JsaQ 7 20in0S
+~ puejsapisoy [eulbuo Wa-vZ
+
+{
+
+ey
+
+ALY \
+o \.
+Z
+
+\\&\Q\
+
+SN
+
+7
+
+o
+ORI
+
+Fig. 3.5.1 : VXLAN packet format
+
+&y
+
+)
+.
+
+Local Area Network(VXLAN)
+
+iy
+
+»
+
+Scanned with CamScanner
+
+
+--- Page 10 ---
+Scanned with CamScanner
+
+
+
+--- Page 11 ---
+. - : T
+
+Source / Dest ~ Network identifier Original host dest and
+MAC and IP of source and payload
+switch tunnel ' ,
+
+endpoints
+
+Fig. 3.5.2 : NVGRE packet format
+
+The format of an NVGRE packet is displayed in Fig. 3.5.2 Similar to VXLAN, the outer
+header includes the MACand IP addresses necessary to deliver a unicast packet to the
+destination switch, which serves as the end point of a virtual tunnel. Recall that UDP was
+the IP protocol used for VXLAN. The IP protocol value for NVGRE is 0x2F, which
+denotes GRE, a distinct IP protocol that belongs to the same category as TCP or UDP. As
+a result, neither source nor destination TCP nor UDP ports are shown in the diagram.
+Foﬂowfng the outer header is the NVGRE header, which provides an NVGRE Subnet
+Identifier with a length of 24 bits that is adequate for around 16 million networks.
+
+3. Stateless Transpbrt Tunneling (STT)
+
+A more recent innovation in the realm of tunneling methods for network virtualization
+is Stateless Transport Tunneling (STT). Nicira served as its principal sponsor at first. STT
+has a number of key properties, including :
+
+¢ STT utilizes MAC-in-IP tunneling.
+
+e The general idea of a virtual network exists in STT, but is enclosed in a more
+general identifier called a Context ID.
+
+o STT packets are unicast between tunnel end points, utilizing TCP in the stateless
+manner associated with TSO. This means that it does not use the typical TCP
+windowing scheme, which requires state for TCP synchronization and flow
+control.
+
+e STT context IDs are 64 bits, allowing for a much larger number of virtual networks
+and a broader range of service models. |
+
+* STT attempts to achieve performance gains over NVGRE and VXLAN by
+19veraging the TCP Segmentation Offload(TSO) found in the Network Interface
+Cards(NICs) of many servers. TSO is a mechanism implemented on server NICs
+which allows large packets of data to be sent from the server to the NIC in a single
+
+TECHNICAL PUBLICATIONS - an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+--- Page 12 ---
+Scanned with CamScanner
+
+
+
+--- Page 13 ---
+. orks as necessary in the S’l‘T header,, which eqmu,mq @p- "!";1 T anc
+| mm a STT Context Identifier of 64 bitsin length that can be partitioned and wtiizec
+
+VA Y Yo eenainevBi f.il‘
+mVIrtual Local Area Network (VLAN) ‘ Pawe.
+A Virtual Local Area Network (VLAN) is a virtualized link that unites various
+network nodes and devices from several LANs into a single logical network. ]
+
+XX Types of VLAN
+
+Virtual local area networks are now essential for businesses with intricate networkmg
+infrastructures. Organizations need technologies that let them pértition their nétivorks to
+boost security, scale them and reduce latency. VLANs allow several LANs and their
+associated devices to communicate via wireless internet, whereas LAN is used to link a
+group of devices, such as PCs and printers, to a server via cables. The five different forms
+of virtual networks are described below : |
+
+e Virtual local area network for management : A smaller network made to assist in
+controlling device traffic, application lcgging and monitoring. The increased
+network security is the main benefit of adopting this network. By limiting access
+and routing all regular traffic to other virtual networks, it can lessen the effects of
+broadcast radiation and make the network safer.
+
+¢ Voice virtual local area network : This form of network, which is set up to carry
+voice traffic, aids in bandwidth preservation and VoIP quality improvement. It can
+be utilised to control traffic produced by VoIP hardware or software, including IP
+phones, VoIP endpoints and voice systems. Most of the time, high transmission
+priority is provided to this form of network above other network traffic.
+
+¢ Native virtual local area network : A theory used to conventional systems or
+hardware that does not allow VLANSs. In order to transport untagged data |
+produced by a system or device configured with the native VLAN via switch port, ~ ?_
+this network acts as a common identifier on the opposing ends of the trunk links.
+
+* Default virtual local area network : Until they are assigned to other networks, such
+as voice or management virtual networks, a default virtual network contains all the
+
+I ' i TECHNICAL PUBLICATIONS ~ - an up-thrust forknowlcdgo
+
+Scanned with CamScanner
+
+
+--- Page 14 ---
+& set up to exclusively carry user-generated data. Administrators can - e
+wmmkemim‘ey aren't all linked to the same network switch,
+
+"y
+[EXE] Advantages of VLAN
+VLAN has a number of benefits, including easier administration, better performance
+
+more flexibility and more. .
+
+1. Saves Costs : Workstations or other devices connected to a specific VLAN can |
+communicate with one another via switches, doing away with the need for routers to
+send and receive data on computer networks from locations outside the virtual LAN,
+Due to the enormous external data interchange, routers nﬁght create bottlenecks and
+generate security issues. Switches, on the other hand, offer less features than a router
+but can communicate with the network's devices and effectively handle the data load.
+This set-up and configuration can lower your company's router investment costs and
+lower overall network latency. |
+
+2. Simplified administration and enhanced security : Virtual LANs don't need intensive
+administrative oversight. You can limit, alter, elimjnéte, update, or adjust access
+restrictions and permissions privileges on these networks. You can separate systems
+and devices into different LAN segments to guarantee security if you need to grant
+access to a certain set of users. Virtual LANs don't require reconfiguration if the
+systems, user groups, or devices connected to a particular network are moved. Your
+company will be able to save money, time and resources in this way. '
+
+3. Offer greater flexibility : Physical networks are less versatile than virtual LANs. They
+are simple to set up, update and assign based on protocol, port and subnet
+requirements. You may communicate with your team and exchange data more easily
+because these networks don't depend on being close to other devices or on physical
+connections like wires and cables.
+
+Ethernet VPN (EVPN)
+
+| EVPN gives big businesses a standardized framework for controlling their campy®
+'.'."‘ d"' centre networks. Scale, simplicity, agility and effective Layer 2 and Layer 3
+
+- m connectivity are all supported by EVPN - architecture, which also 1owe®
+OpEx(operational expenditure) expenses.
+
+¢
+
+TECHNICAL PUBLICATIONS © - an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+--- Page 15 ---
+¢ s N I ¥ i N | : < L -
+
+, " —Jf"lﬂn’e-[ f o
+2a \d Layer 3 connection between e‘ndp'oiﬁts around the v
+
+Benefits of EVPN o VALKV - e
+
+‘ A m advantages of using an EVPN architecture include : | -~
+o Programmability makes it simple to automate
+
+« Backwards and forwards compatibility is ensured by its open standards - based
+design. hab
+
+e Layer 2 and Layer 3 connection that is efficient and integrateci with control plane -
+based learning '
+
+ALULILY 1O PIO
+. -
+
+irTiqnsley
+
+ Simple network scalability depehdihg on business requirements
+
+o Get safely isolate traffic via network segmehtation inside and across several
+campuses and data centres.
+
+¢ Reduced fault domain improves network dependability.
+
++ MAC address mobility offers easy but flexible deployment options.
+
+* With loop-free technology, spanning tree protocol is not as necessary (STP)
+
+¢ The network bandwidth is entirely used by active - active redundant connections. |
+
+Understanding EVPN i | |
+
+* In conventional Layer 2 networks, flooding is used to spread reachability information i
+in the data plane. In networks using EVPN-VXLAN, this activity is moved to the |
+control plane. i ]
+
+* EVPN is a Border Gateway Protocol (BGP) extension that enables the network to
+
+convey Layer 2 MAC addresses and Layer 3 IP addresses as endpoint reachability data.
+
+For the endpoint distribution of MAC and IP addresses, this control plane technology
+
+émploys MP-BGP, where MAC addresses are regarded as routes.
+
+o addition, EVPN offers redundancy and multipath forwarding via an. all-active
+
+II“‘lltﬁmming approach. A device or endpoint can establish connections with tVtIO or
+
+More upstream devices and use all available links to forward traffic. Traffic sonpnues
+
+10 4m°."e using the remaining operational links even if a device or link malfunctions.
+
+- an un-thrust for knawledne
+
+ TEAWNIRAL PLRLICATIONS
+
+Scanned with CamScanner
+
+
+
+--- Page 16 ---
+in EVPN desnsns By empsuhﬁns trafﬁc and tunneling i
+“+ ol """"'* stwork, network overlays are produced. In order to enable u’
+'m or subnets that can transcend the underlying physical Layer 3 nety
+VXLAN tunneling protocol wraps Layer 2 Ethernet frames in Layer 3 UDP pa
+VXLAN tunnel endpoint is the component that encapsulates and decapsulates V
+(V'I'm’). Through the use of EVPN, VTEPs may communicate with one ..--:jyl :
+regarding the reachability of their endpoints. Tk -
+
+t
+
+EX) SDN Use Cases
+
+~ Software Defined Networking (SDN) has received a lot of interest from scientists a an d
+academics over the last several years. It is still an evolvmg technology that will eventually
+lead to the software - controlled networking architecture taking the place of the physic '
+network design. Typically, it turns out to be a flexible, reasonably affordable and dynamic
+option. SDN's complexity enables it to meet applications' high bandwidth requirements.
+
+Despite the hoopla around software defined networking, few real-world applications
+can be identified, but that doesn't imply there aren't any. Here are a few SDN use cases
+that demonstrate its flexibility and ability to solve certain network issues.
+
+» Hyper - converged storage / converged storage
+A design known as converged storage combines storage and computational power info
+a single entity. They may be used to build platforms for workloads that are storages
+server-, or even hybrid (storage-server)-focused. Several well-known data services
+providers are starting to implement SDN while building programmable fabrics
+between storage and data centre technologies. The goal is to achieve server and stora '
+virtualization agility through the use of virtualization. For instance, Edgenet I
+created the Programmable Flow SDN Ecosystem, which builds such a system using
+
+robust and effective switching,
+* Video applications
+
+' thf‘ “‘3“‘8 it for their video and collaboration services, the unified j
+‘“d border control prowder Networks unveiled a new application for SDN.
+- ur lipe mtwork virtuahzaﬁon platform with their session border ol
+
+*'7‘ 'uillovud provideta the luxury of creating capad*}’ for' :
+
+Scanned with CamScanner
+
+
+--- Page 17 ---
+'
+= - i*,' g b, i
+v v T K
+] - s
+
+using SDN as an enterpmm A f
+Wk and best accommodates the dynamic agreements i
+ﬂne of work.
+
+o,dmmhon of mobile network services
+
+“Both SDN and NVF, or network functions virtuahzation, have mvaded thenetworks Og
+
+mobile operators. In an effort to assure optimal resource utilization and dynaxme .
+
+l provisioning on the service orchestratlon vendors have started to employ them to set
+up their networks more meticulously. Vendors employing the combination of SDN
+and NVF now have a lot of advantages, including the ability to provision lead times.
+
+- Companies may now isolate their application logic, which was previously impossible,
+which is another crucial factor in choosing SDN-NVF, The design can adapt to the
+requirements of the suppliers thanks to effective service orchestration and dynamic
+resource consumption. Businesses assert that after adopting the architecture, they have
+been able to cut down the lead times a lot and have also reported quicker overall
+performance of their platforms
+
+* Data center networks’ scalability
+
+Networks in data centres can also employ SDN to replace their wired infrastructure.
+Currently, University of Illinois researchers are attempting to evaluate a new network
+that has been established for a data centre using certain SDN switches. The researchers
+are able to scale the bandwidth between servers; of course, this might have been done
+in another way as well, but only after spending an excessive amount of money on
+hardware. There are 13 Pica8 switches installed, totaling about 670 ports. Access
+speeds will likely increase significantly if data networks are more often managed by
+software since load balancing and capacity scaling will be guaranteed.
+
+m SDN in the Data Center
+
+The need for Software-Defined Networking (SDN) in the data centre is being driven by
+Virtualization, More expectations are being placed on the data centre to provide more
+flexibility, better performance and higher security as a result of growing demands on IT
+*Mployees to support cloud computing services, mobile apps, BYOD and big data
+“PPlications, The infrastructure must be provided as a service powered by software,
+oiding the need to constantly modify the physical data infrastructure to meet these
+
+5 .
+
+TECHNICAL PUBLICATIONS - an up-thrust for knowladns -
+
+Scanned with CamScanner
+
+
+--- Page 18 ---
+. ,m'wmyme.m.we nemwk amh‘imturé mw
+d@@ngmmneedsy RELL B ' o
+
+_ SDN Strategy to Centralize Management in the Data Center
+Using an SDN pohcy to centrahze management in the data center eases
+
+management in a variety of ways : "
+
+1. Automated network provisioning - Creating a programmable network enab]es' u
+to automate access to network resources. 'Automated network prov‘isl ing
+Network regulations and security protocols may be implemented, as well as
+automated provisioning for remote locations and connections, using the SDN.
+
+2. Traffic shaping - You may track and shape network traffic, including assigning
+
+" Quality of Service (QoS) to prioritise certain wide-area network traffic, using APIs
+‘that expose the switching and controller fabric. It is also feasible to automate the
+management of bandwidth, hop count and circuit usage, transferring backups and
+other non-critical data traffic across underused secondary lines. Throughput is
+accelerated and becomes more predictable.
+
+3. Real-time monitoring - Centralized performance- monitoring is also made i)ossihk. '
+by routing SDN traffic through the data centre. Monitoring performance can assist ;
+to increase dependability, improve performance and enable automated failover as
+needed to solve latency concerns from distant data centres or cloud resources.
+
+4. Reducing security risks - The SDN can segregate network nodes that could be
+
+~ bringing malware into the company using virus detection and real-time
+monitoring. To preserve performance, the SDN might instruct the network to ]
+divert traffic around a compromised node or connection point.
+
+|
+|
+y
+|
+|
+|
+|
+
+Use Cases for SDN in the Data Center
+
+In network architecture , as needed to meet any requirement by adding soﬁw?'
+controls and automation to manage almost any LAN or WAN asset. Without SDN in
+data centre, the following use cases would not be feasible : ‘
+
+* VM cogimunication simplification - Without a software - defined strategy’
+managmg large data centres like the hyperscale data centres utilised by AmaZ®
+< N\d Google would be very challenging. Virtual Machines (VMs) can commd
+
+2 ,A,_W“h one another using SDN without worrying about the underlying faan- .' ’
+IUWQI'S operational costs wl'ule streamhmng VM deployment. ~
+
+rseumcm. PUBLICATIONS - an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+--- Page 19 ---
+Scanned with CamScanner
+
+
+
+--- Page 20 ---
+S —— —
+
+SDN Programming
+
+TE o v %
+
+- ‘i ’ "
+e SrertELCEE T I
+. i
+
+“ arn' '
+215 4
+
+amming ?PNS : Northbound Application Programming Interface, Current Languages and
+, Composition of SDNs - Introduction of Network F unctions Virtualization (NFV) and Software
+Networks : Concepts, Implementation and Applications et
+
+Northbound Application Programming Interfacé A ; .;
+Current Languages and TooIs....' .............. ..... April-19, Marks 6 :
+
+‘Composition of SDN ’
+
+Network Functions Virtualization }
+
+SDN Implementation
+
+Scanned with CamScanner
+
+
+--- Page 21 ---
+©+ The usual 'm'wmcrnnm'm* tches and
+
+s Interf:
+
+SDN architecture using Application Programming Intectaces m
+resides in between the controller and the application layer in SDN is know
+Northbound API. ‘ | | A
+Northbound API presents a network abstraction interface to the apphm‘ :
+management systeins at the top of the SDN stack.
+Northbound API implemented by SDN controllers can be regarded as 2 networ
+abstraction interface to applications, easing network programmability, simplifying
+control and management tasks and allowing for innovation. In contrast o ¢
+Southbound API, the Northbound API is not supported by an accepted standard.
+The northbound interface connects SDN applicatiohs to the controller. An application
+can request information, such as statistics and incoming connections from the
+controller. An application can also send commands to the controller, in order to conirol
+the network, such as added or removed flow rules. |
+An application is designed for a specific task. Using the information obtained from&
+controller, possibly combined with information from other sources, it can make a
+informed decision about changing the network.
+
+An example of an application which does all of the above, is a data traffic applicationin
+a data center. Fig. 4.1.1 shows schematic overview of a SDN application which
+monitors data traffic usage.
+
+A bookkeeping system holds the data traffic limit of a certain user. The application
+
+keeps track of the data usage of this user via the northbound interface. Once it reaches
+the limit found in the bookkeeping system, the application can install a rule blocking of
+limiting data transfer from and to that user.
+
+Limit reached
+- feedback _ =
+
+[
+-~
+
+Data traffic Block transfer when
+information
+
+limit reached
+
+Flg. 4.1.1 : Schematic overview of a SDN application which monitors data traffic usage
+
+TECHNICAL PUBLICATIONS ~ - an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+--- Page 22 ---
+iy
+"- [ {
+
+| 1 i ' '.h
+
+ik =
+
+f nd interface, where OpenFlow is dominant,
+northbound interface is implemented in .om._ , O
+'" develqpment cycle and lower investment costs than the ;;_-y ]
+ which requires specialized hardware. | e
+' . While there is no standard, many controllers have chosen to implemez'ft ; “ ST or
+- RESTful northbound interface. This ensures decoupling in space between the
+~ application and the controller. ' -
+
+19
+wak
+HC
+
+. With this, the controller has control over what functions it exposés to the SDN
+
+~ applications and its performance will not be affected by them, since applications can i'.
+
+run on a different host.
+
++ Northbound APIs present an abstraction of network functions with a programmable
+interface for applications to consume the network services and configure the network
+dynamically. They allow the applications to dictate the behaviour of the network.
+
+« There are two kinds of communications that occur in SDN; one is between a forwarding
+
+plane element and a controller and the next is between the controller, the applications
+
+or business logic.
+
++ Northbound APIs usually provide a list of vendors related base network functions
+which are then used to configure user specific infrastructure and the controller
+interprets it into a language that each infrastructure node can understand.
+
+thbound APIs is because external
+
+* The primary reason for the existence of Nor
+y wish to extract information and
+
+management systems or network applications ma
+control the underlying network and parts of its behaviour.
+
+* They also expose the universal network abstraction data model and functionality
+within the controller for use by network applications.
+
+* They are used to facilitate innovation and have effective orchestration of the ne
+
+is required for the alignment of the network to the needs of different appli;aﬁ
+they enable maximum utility of the SDN architecture.
+
+* The importance of the Northbound Interface is that it simplifies tht? operation of the
+control plane, by providing a high-level API between the application ?ayer and the
+controller, This makes it easier for the development of network functionalities. |
+
+* The Northbound Interfaces Working Group has the goal of buildipg anvinterface
+
+“@pable of dealing with different Jevels of abstraction and across a wide range of
+
+_ domains, |
+
+—
+
+twork. It
+ons and
+
+" TECHNICAL PUBLICATIONS
+
+Scanned with CamScanner
+
+
+
+--- Page 23 ---
+he imple ements bhofNorthbound APIs uses various approaches Prirycts 1 f
+i'  Define portable low-level application interfaces that make the southbour
+~ look like device drivers. . 'z.f i
+
+2. Create Ad-Hoc Northbound API that are specific to a controller These have the oir
+
+own purpose and specific definitions. | (B8R
+
+- 3. Translate application requirements into lower level service requests. e ﬂ
+Propose a general control platform based on Linux and abstractions such as the _
+virtual file system.
+
+5. Allow network administrators to define module speaﬁc allocatlons and access
+control policies.
+6. Use SDN programming language |
+* The northbound interface is implemented in software; therefore, it can have a more
+rapid development cycle and lower investment costs than the southbound mterface ;
+which requires specialized hardware.
+* REST API : A Representational State Transfer (REST) API or an API that is RESTful is
+neither a protocol, language nor an established standard. It is basically constraints that
+an API must follow in order to be a RESTful API.
+
+Current Languages and Tools
+
+* Network devices have always been considered as configurable black boxes until the
+emergence of Software-Defined Networking (SDN).
+
+* SDN enables the networks to be programmed according to the user requirements;
+furthermore, it allows the network to be easily modified to suit transient demands.
+
+* However, how do we program the network ? SDN - comphant switches offer a low -
+level interface that makes programming error-prone.
+
+* The controllers provide application programming interfaces, but still low-level, limited
+and inflexible. High - level languages have the potential to be a better alternative to
+program the network.
+
+There exist several SDN programming languages implementing different sets of
+-4 | functionalities and focusing on solving various issues. ' 4
+
+TECHNICAL PUBLICATIONS — - an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+--- Page 24 ---
+Scanned with CamScanner
+
+
+
+--- Page 25 ---
+"+ OpenDaylight has a large amount of backing from different companies.
+Ini ' , ;vnght uses the Apache Karaf framework as a container fo_r'i'tg"‘
+m““ﬁﬁ;gtﬁe ka;'&f console, features can be easily turned on or off. -'
+e "“éoi\'ﬁgﬁfé'ﬁon and logging are also handled by karaf. |
+
+_ . K;réf has a number of components available for use, most important a web seryer
+
+used by the northbound interface of OpenDaylight.
+
+5. NetKAT
+* NetKAT is a network language for SDN programming that has a solid
+mathematical, semantic foundation. It is similar to NetCore and Pyretic although
+neither language can provide potentially infinite behaviours. '
+* NetKAT applies its complete equational theory and provides syntactic techniques }
+for the same. Hence, its applications in a network include checking reachability,
+isolating traffic between programs through non - interference properties that it
+provides, as well as compilation algorithms correctness.
+* Its design includes a mathematical structure called Kleene algebra with tests (KAT)
+that provides a solid semantic foundation for NetKAT. ; |
+
+6. Mininet
+
+* Mininet is a network emulator capable of creating virtual networks with hundreds
+of hosts and switches on a single computer. It is based on Linux process -
+virtualization to run the nodes in the OS kernel.
+
+* As of Linux version 2.2.26 there is support for network namespaces, a lightweight
+virtualization feature and Mininet takes advantage of it. This means that each
+process can have a separate network interface, routing table and Address
+Resolution Protocol table. Then, it is possible to have links between hosts and
+switches (processes), in order to build a virtual network.
+
+* With a single command, Mininet can create a realistic virtual network on any type
+of machine (Virtual Machine (VM), cloud-hosted, or native). Therefore, it PI‘OVides ]
+
+- an inexpensive solution and streamlined development running in line with .
+Production networks. b " e ;
+
+Scanned with CamScanner
+
+
+--- Page 26 ---
+PP TR
+
+- .\,:;,,v/,‘. p.
+
+created, running on asingle laptop, ',
+. Ammmm a process (or group of pr | origér has
+all the host system’s native network mteﬂhoes.« "' re the ened virtu
+Ethernet interfaces, which are connected to other cmw through a virtu
+switch. L
+q'Minlmt Oonnectn a host and a switch using a v1rtua1 Ethemek (\reth) lir (,I}ﬁ
+" link is analogousto a wire connecting twovn:tualmterfaces _— ._*.._... ;
+o Features of Mininet : 1402 1o nolfisogmed ﬂ N
+i. Fast prototyping for new networkmg protocols. Y ot 178
+ii. Simplified testing for complex topologles without the need of buymg
+expensive hardware. :
+iii. Realistic execution as it runs real code on the Umx and Lmux kemels
+iv. Open source environment backed by a large commumty contnbutmg
+_extensive documentation.
+
+¢ Basic commands are as follows : _
+» After logging into the server, start mininet by typing : :
+> sudo mn -c (enter the password for the computer) ; : ol
+This will clean up the mininet framework and reset 1t to the 1mt1al state. Start mmmet |
+again but without cleaning it up by :
+> sudo mn
+¢ We should get a mininet prompt as follows : mininet>
+» To list the topology type :
+mininet> net
+s Display Mininet CLI commands :
+mininet> help
+* Display nodes :
+mininet> nodes
+
+7. Floodlight
+' Floodlight is a Java-based OpenFlow controller. It was developed by Big Switch
+
+~ Networks and used in their commercial switches. Then, opened to the commumhy
+under an Apache license, where it is actively developed. A :
+
+' TECHNICAL PUBLICATIONS -an up—lhrusf br knowb&go
+
+Scanned with CamScanner
+
+
+--- Page 27 ---
+: o ;..mmmth&apphmﬁms through the NBIL
+1. What is Mininet ? Explain basic commands of Mininet.
+Composition of SDN
+
+1. Flow Table
+
+- d) Instructions : To modify the action set or pipeline processing. .
+€) Tlmeouts Maximum amount of time or idle time before ﬂow is expired’bﬂ :
+
+SPPU: /
+
+Flow tables are the fundamental data structures in an SDN device. These flow
+tables allow the device to evaluate incoming packets and take the appropmu
+action based on the contents of the packet that has just been received. |
+Flow table resides on the network device and consists of a series of flow entries and
+the actions to perform when a packet matching that flow arrives at the device.
+When the SDN device receives a packet, it consults its flow tables in search df a‘
+match. i
+These flow tables had been constructed previously when the contro]ter
+downloaded appropriate flow rules to the device. If the SDN device finds a matcf\'
+
+it takes the appropriate configured action, which usually entails forwardmg
+packet. v *
+If it does not find a match, the switch can either drop the packet or pass it to ﬂ'ﬁ
+controller, depending on the version of OpenFlow and the conﬁgurahon of ﬂ\ﬁ
+switch.
+
+i ¢‘I'- 3
+Each flow table entry contains :
+
+a) Match fields : To match against packets. These consist of the ingress port e ,j
+packet headers and optionally metadata specified by a previous table.
+
+b) Priority : Matching precedence of the flow entry.
+
+¢) Counters: Updated when packets are matched.
+
+I
+
+#e ‘7‘
+
+. k‘ =
+TMIML MIIQNS -an Unnm MM
+
+Scanned with CamScanner
+
+
+--- Page 28 ---
+] ~ -
+na riow cal
+
+processing pa ". QR e G
+ Sf \--"-" t _ NSWNch.. A i ; Lie Ve v .., o Ve .'"’-'H’F;E ' ."i'ri'-; 4
+o Implementation of SDN devices in software is the simplest means of cr
+'SDN device, because the flow tables, flow entries, and match fields involve
+easily mapped to general software data structures, such as sorted arrayyarld
+tables. | - . i
+¢ Implementations in software are likely to be slower and less efficient than those |
+
+implemented in hardware, since they do not benefit from any hardware
+acceleration. .
+
+* Software SDN device implementations are most often found in software-based v ol
+network devices, such as the hypervisors of a virtualization system. PR
+
+3. Hardware SDN Devices
+» Network devices utilize specialized hardware designed to facilitate the inspection
+of incoming packets and the subsequent decisions that follow based on the packet-
+matching operation. ‘_
+e hardware includes the layer two and layer three forwarding tables, usually
+implemented using Content - Addressable Memories (CAMs) and Ternary Content
+
+- Addressable Memories (TCAMs).
+
+m Network Functions Virtualization
+¢ Network Functions Virtualization (NFV) is a way to virtualize network services, such
+as routers, firewalls and load balancers, that have traditionally been run on proprietary
+hardware. : ,
+¢ These services are packaged as Virtual Machines (VMs) on commodity hardware,
+which allows service providers to run their network on standard servers instead of
+proprietary ones. ;
+* NFV architecture consists of : 3
+a) Virtualized Network Functions (VNFs) are software apphcatxons that deliver -
+network functions such as file sharing, directory services and IP configuration.
+b) Network Functions Virtualization infrastructure (NFVi) consists of the ;
+infrastructure components, compute, storage, networking on a platform to support
+software, such as a hypervisor like KVM or a container management platform,
+
+needed to run network apps.
+TEGHNICAL PUBLICATIONS - an up-tfrustfor knowledge
+
+&
+.
+
+Scanned with CamScanner
+
+
+--- Page 29 ---
+aliz "" m mtwoxfk abstracﬁon, but how meggm net
+
+rates network forwardmg functions from network control ﬁmet:ons vit L t
+
+niaeahng a network that is centrally manageable and programmable
+
+ﬁ abstracts network functions from hardware. NFV supports SDN by prowdmg
+
+infrastructure on which SDN software can run. '*4 h
+
+» NFV and SDN can be used together, depending on what you want to accomplish and -
+ both use commodity hardware. With 'NFV ‘and SDN, you can create a network
+architecture that is more flexible, programmable and uses resources efficiently.
+
+« NFV decouples network functions from dedicated hardware devices and moves them
+to general-purpose servers, which allows multiple functions to be consolidated onto a
+single physical server with well-defined open interfaces to Management and
+Orchestration systems. :
+
+e This virtualization of network functions reduces dependency on dedicated hardware
+appliances for network operators and allows for improved scalability and
+
+customization across the entire network. Different from a virtualized network, NFV
+seeks to offload network functions only, rather than the entire network.
+
+* Separating network functions from hardware yields numerous benefits for the netwalki !
+operator, which include :
+
+a) Reduced space needed for network hardware
+b) Reduce network power consumption
+
+¢) Reduced network maintenance costs
+
+d) Easier network upgrades
+
+e) Longer life cycles for network hardware
+
+f) Reduced maintenance and hardware costs
+
+* Fig. 4.4.1 shows a simplified view of the ETSI NFV architecture.
+
+O TECHNICAL PUBLICATIONS ~ - an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+--- Page 30 ---
+Fig. 4.4.1 : Simplified view of the ETSI NFV architecture
+
+o The major components of the architecture include the NFV infrastructure (NFVI),
+VNFs, VNF managers and management and orchestration (MANO). Some of the
+critical goals of an open NFV architecture include :
+
+a) Decomposition of physical network elements into virtualized network ﬁmcho,?;
+(VNFs) to allow operators to choose the best implementations from a range
+vendors.
+
+b) Portability of VNFs to different hardware platforms and hypervisors.
+
+¢) Rapid software - based service delivery.
+
+d) Standard, open interfaces for improved mteroperablhty in multi - vendor NFV
+
+solutions.
+e) Use of low - cost, commercial off - the - shelf (COTS) hardware
+
+* Management and Orchestration (MANO) provides the overarching management and
+orchestration of the VNFs in the NFV architecture.
+
+¢ MANO instantiates the network services through the automation, provisioning and
+coordination of workflows to the VIM and VNF Managers that instantiate the VNFs
+and overlay networking service chains. MANO connects the NFV architecture with the
+
+existing OSS / BSS.
+. SDN Implementation |
+1. Define a use case. SDN is a broad, multi-faceted technology. Whether it fits in your
+
+organization depends on the problem user want to solve. o3
+
+2. Assemble a cross - functional team. SDNisasilo-breahngteduwtog;
+lmplementmg it correctly requires a well - rounded team with a broad range ofskin;
+
+and a comprehensive approach.
+TECHNICAL PUBLICATIONS ~ - an up-thrust for knowledae
+
+L
+
+s -
+
+Scanned with CamScanner
+
+
+
+--- Page 31 ---
+m aqmdmgdeploymm Bvanfyuurstm .
+'!'1 I"‘ ,mﬁmsmeﬁmlstepbdoreexpmdingitmym
+Slowly increase your project’s footprint and gain maturity before fully e
+deployment.
+« There are a number of programming languages for SDN and the majority of\M
+be applied in OpenFlow networks. OpenFlow is the first and only standa;
+interface between the control and the mfrastructure layer that allows forwarding m&.
+in SDN.
+e As the OpenFlow nétwork can be programmed on the data flow level, it provides
+~ higher - granular control that enables fast adaptahon to network apphcatlons and user
+
+requn'ements
+
+Applications of Software-Defined Networking
+
+1. Data centers : The SDN architecture is targeted at Infrastructure-based networks and
+data centers fall under this category. Data centers operate large-scale networks,
+which places policy enforcement and traffic management at a critical level.
+
+2. Enterprise networks : Generally, enterprises run large networks while possessing
+rigid security and performance requirements. For networks in an enterprise
+environment to function adequately, the SDN model can be adopted to enforce
+policies and services that would optimize network performance as well as enhance-
+network management.
+
+3. Optical networks : Extending SDN to handle data traffic as ﬂows enhances the
+integration of multiple network technologies.
+
+4. Bandwidth management : With the help of SDN applications, operators can use
+bandwidth management to ensure the end users to receive online video watching
+and optimal browsing experiences. : Lh
+
+5. Content availability : SDN applications can also check the availability of the content
+in the content servers before routing requests to servers. A content - routing E
+
+- application will provide intelligence on its availability along with enabling dISCO"e'y;
+of content in the content servers, 1
+oad
+
+TECHNICAL PUBLICATIONS ~ - an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+--- Page 32 ---
+Scanned with CamScanner
+
+
+
+--- Page 33 ---
+t 'I'he virtual maclﬂnes use a |
+e and procahukell’aﬂwandng and routing .
+tion of communication services from dedicated hardware, like
+3 nms and ﬁrewalls separaﬁon means that network operations will e
+services dynamically and while not putting in new hardware. Deploying netwc "R
+~ elements with network functions virtualization takes hours rather than months like
+! with andient networking. Also, the virtualized services will run on less costly, SM' ;
+servers rather than proprietary hardware.
+« Additional reasons to use network functions virtualization include :
+1. Pay-as-you-go : NFV models will cut back prices as a result of businesses PaYmS
+just for what they have.
+2. Fewer appliances : NFV runs on virtual machines rather than physical machines,
+fewer appliances are necessary and operational prices are lower. :
+3. Scalability : Scaling the spec with virtual machines is quicker and easier and it
+doesn't need getting extra hardware.
+
+Working of Network Functions Virtualization (NFV)
+
+Essentially, network functions virtualization replaces the practicality provided by
+individual hardware networking parts. This implies that virtual machines run software
+packages that accomplish identical networking functions because of ancient hardware.
+Load equalization, routing and firewall security area unit all performed by software
+package rather than hardware parts. A hypervisor or software-defined networking
+controller permits network engineers to program all of the various segments of the virtual
+network and even modify the provisioning of the network. IT managers will put together
+numerous aspects of the network practicality through one pane of glass, in minutes.
+
+Benefits of Network Functions Virtualization
+
+Several service providers feel that the advantages of network functions virtualization
+outweigh the risks, With ancient hardware-based networks, network managers ought t0
+purchase dedicated hardware devices and manually tack together and connect them O
+make a network. This can be long and needs speciahzed networking experience.
+
+TECHNICAL PUBLICATIONS * - an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+
+--- Page 34 ---
+AISLYY V.
+
+»..,‘»'I
+
+_:tonﬂgunﬁoﬁ wmﬁagenm 1 ta ckoter it Vh AT ABSV Ot
+work practicality is modified or another on dmwm amm
+mnmg on virtual machines that are a unit simply provisioned and rﬂm nes
+
+- BB Risks of Network Functions Virtualization ) -
+
+J‘
+
+"'|—.|.|. ¥ .'
+
+|
+| NFV makes a network a lot of responsive and versahle, and simply ascendable It wﬂl |
+accelerate time to promote and considerably cut back instrumentation prices. However,
+there are security risks and network functions virtualization security issues have verified
+to be a hurdle for wide adoption among telecommunications suppliers. Here the risks of
+
+xmplementmg network functions virtualization that service supphers have to be
+compelled to consider :
+
+* Physical security controls do not seem to be effective : Virtualizing network parts.
+will increase their vulnerability to new types of attacks compared to physical
+instrumentation that is secured in a very knowledge center.
+
+Malware is tough to isolate and contain : It is easier for malware to travel among
+
+virtual parts that are a unit all ruhning off of 1 virtual machine than between
+
+hardware parts which will be isolated or physically separated.
+
+* Network traffic is a smaller amount transparent : Ancient traffic observance tools
+have a tough time recognizing doubtless malicious anomalies inside network .
+traffic that is traveling east-west between virtual machines, therefore NFV needs a
+lot of fine - grained security solutions.
+
+* Complex layers need multiple kinds of security : Network functions virtualization
+environments area unit inherently advanced, with multiple layers that are a unit
+laborious to secure with blanket security policies.
+
+NFV Architecture
+
+In a traditional network specification, individual proprietary hardware devices like
+routers, switches, gateways, firewalls, load balancers and intrusion detection systems all
+do completely different networking tasks. A virtualized network replaces these items of
+apparatus with computer code applications that run on virtual machines to perform
+Networking tasks.
+
+An NFV design consists of three parts :
+
+TECHNICAL PUBLICATIONS ~ - an up-thrust for knowledge
+
+A
+
+Scanned with CamScanner
+
+
+--- Page 35 ---
+]
+il
+/ 11281175
+@) LDDO! FANAN nhH
+
+Scanned with CamScanner
+
+
+
+--- Page 36 ---
+sl
+it
+
+" I order to alter the physical and virtual network’if,ié;.'”‘&“" /FI use
+'nndardxsed x86 computer hardware and software, indﬁdir:gr ~ ) p 7‘ vir ual
+machines and virtual infrastructure managers. It provides the physical esources -
+~ computing, storage, networking and computer code - on which virtual network J i‘? 5
+are set up and controlled. To enable logically dividing and provisioning hardware
+resources to support VNFs, the NFVI offers the virtualization layer that resides above the -
+hardware. The NFVI is also crucial for building global networks that do not have the
+
+regional restnchons associated with older network topologies.
+
+W¥1] Virtual Network Functions
+
+On top of the physical networking infrastructure, virtualized network functions are
+run in one or more virtual machmes Routers, switches, SD-WAN, ﬁrewalls and a
+growing number of other network services are included in VNFs and are now sold as
+software by companies like Cisco, Juniper Networks and Town Networks.
+
+Because network operations are virtualized, there is no longer a need for on-the-spot .
+technical expertise when VNFs are remotely deployed. This eliminates preparatory delays :
+caused by outdated network gear. In hybrid and multi cloud systems, VNFs provide the
+flexibility needed to predict or respond to changing network performance or growth
+
+NFV Management and Network Orchestration(MANO)
+
+A social unit of the European Telecommunications Standards Institute (ETSI) may
+have created the NFV management and network orchestration (MANO) framework. NFV
+MANO controls resourcés, including the NFVI as well as VNFs, running in a highly
+virtualized data centre as well as calculations, networking, storage and virtual machines,
+from original conception to day-to- day operations (VM). To help architects choose the
+best NFVI resources to deploy, NFV MANO utilises templates for standard VNFs.
+
+NFV MANO is comprised of three useful areas :
+* NFV adapter handles VNF on boarding, lifecycle management, world
+
+management and vahdanon and authorization of NFVI resource requests. o |
+S
+
+resource
+
+TECHNICAL PUBLICATIONS " - an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+--- Page 37 ---
+Scanned with CamScanner
+
+
+
+--- Page 38 ---
+. comeclims to Production workloads located in the AWS N rth o i
+Wherever they connected to the Oracle Cloud on the on ramp, Pm“"
+
+connections connect geographic area with to provide access to workloads Wﬂl‘iﬁ?
+Phoenix. The manufacturer's secure, private connection between their AWS and Or:
+
+workloads solved the synchromsatlon performance issues w1thout adding any motg
+physical infrastructure.
+
+Equinix Eliminates the Complexness of Building NFV Architectures
+
+« Enterprises may overcome the limitations of legacy network infrastructures thanks to _ "
+NFV designs. Through virtualization, network services may be prepared quickly and
+as-needed without being dependent on the underlying hardware. The supply of the
+underlying physical and virtual infrastructure resources is swiftly handled by the
+management and orchestration layers.
+
++ Equinix has simplified the NFVI construction and multi-vendor VNF onboarding
+processes. This assures the functionality of those network services and gives clients the
+option to select from a wide range of top suppliers including Cisco, ]umper Networks,
+and Palo Alto Networks. With its global software-defined interconnection, ECX
+FabricTM, Equinix's approach to NFV designs accommodates both the continuous need
+
+for physical installations and the need for cloud and network connectivity.
+
+* By comprehending the essential elements of NFV designs and therefore the global
+resources that Equinix offers, businesses will take the first steps toward more potency o
+in designing, implementing and controlling their global network resources. "
+
+NFV Vs. SDN
+1. While NFV separates specialised hardware components from networking services
+
+2. Software-defined networking, or SDN, separates network forwarding tasks from
+network management activities including routing, policy creation and applications.
+
+3. SDN enables the programming of whole networks through a smgle pane of glass
+i because a virtual network control plane determines where to transmit traffic.
+
+SDN enables the automation of network control procedures, enabling the network
+
+TECHNICAL PUBLICA TIONS - an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+--- Page 39 ---
+| - 5 -'J'.%I.Ll
+
+- FLTINR
+
+i
+
+p o euph&sml network or a virtual network.
+Vfrh_ia_lization technology is essential to the operation of both SDN and N
+
+. I
+
+|
+¥ -ty chanoin: r workloads., w0
+L0 Cllal Al FAANAN il 4 L) - 4 e r
+. o B Gl & B L . L -
+20 Sl 1" "y F * - } ) V?‘F”
+il
+
+. 2
+
+~ BANFV Use Cases ‘ '“7"
+Here are five examples of network function virtualization use cases that exhibxt
+NEFV is being used to tackle a range of challenges as well as offer better solutions to these
+and other networking hurdles in order to enhance services and diminish outgoings.
+
+Use case 1- Network virtualization
+
+The main utilization with that NFV technologies square measure being employed
+by chiefly telecommunication corporations round the world is, of course, for
+network virtualization.
+
+This method creates a virtual network on prime of the physical network and
+
+permits service suppliers to expand and accelerate development and innovation of _
+
+services, also as different network needs like provisioning.
+
+In order to optimize their network services, customers look to network
+virtualization to decouple their network functions like DNS, caching, IDS and
+firewalling from the proprietary hardware that was, till recently, the dominant
+solutions, thus on alter them to run on package instead.
+
+This gives service suppliers the lightsomeness and suppleness they have once
+rolling out new network services and may facilitate to scale back their
+disbursement on space-stealing physical hardware and also the prices related to
+running, maintaining and infrequently repairing it.
+
+However, whereas network virtualization is one amongst the foremost widespread
+applications of network functions virtualization, it is by no suggests that the sole
+one.
+
+Use case 2- Mobile edge computing
+
+e = - TECHNICAL PUBLICATIONS® - an up-thrust for knowledge
+
+Mobile edge computing is another technological innovation that has gone from
+strength to strength over the past number of years and appears solely to be gaining
+momentum as we feature on into 2018, Whereas several could raise however
+network operate virtualization and mobile edge computing relate to at least on¢ i
+another, so as such joined and are actively influencing one another in each area of
+development and also the enlargement of applications. ; -
+
+Scanned with CamScanner
+
+
+
+--- Page 40 ---
+kA
+o
+s)\'4
+
+e TS mﬂe'm-rfm aeden
+
+~» Networ owmd Virmliuﬂom aboard different technological
+r .amm and developments like software-defined networldns mi
+e science, can possibly become the prime solutions for the network chal
+tomorrow thanks to their early integration and combination with one another.
+
+Use case 3 - Video analytics ,
+
+o Another tool that has seen a large increase in its potential since the beginning of the -
+net of things is video analytics systems and packages. -
+
+o Now, corporations square measure able to capture large amounts of knowledge
+exploitation of IoT and sensible devices in their factories, stores, offices and even -
+farms.
+
+e One of the largest problems facing trendy networking is end-to-end network
+latency, that poses a true challenge to applications and network services that
+square measure very sensitive to network delays, like video analytics. .
+
+e In order to combat this challenge, enterprises are turning to NFV and SDN
+architectures so as to scale back network resource utilization and improve latency.
+
+This could, once combined with exploitation video analytics at the network edge,
+scale back information measure use by up to ninetieth in keeping with some |
+proposals. ‘
+¢ With IoT, smart and edge devices sanctioning a lot of and a lot of knowledge to be |
+generated, collected and so analysed, video analytics systems and packages became 1
+and can still be a progresswely necessary part of utilizing the massive knowledge 1
+currently on the market. Network functions virtualization is the design of that to B
+make these systems upon.
+
+Use case 4 - Orchestration engines
+¢ One of the most advantageous NFV use cases is that of orchestration engines. With
+conventional legacy networks, issues such as low agility, human error and lack of
+automatic processes and alerts made these kinds of networks extremely inadequate
+in their capabilities.
+* One of the principal causes of network downhme is human error, hence why
+automated systems are in such high demand.
+
+TECHNICAL PUBLICATIONS
+
+Scanned with CamScanner
+
+
+--- Page 41 ---
+b-n
+
+{ 'w‘ﬁ e r Al )
+e 4 i ninney O CcL ol
+PRIy v R AP
+
+b
+>y
+[
+
+utor ale
+
+g S b " . g - -  y— "o T "']P’.:(ﬂ.l
+= Centralized policy automation i
+~* Centralized hybrid WAN management it ¢ st
+~ *  Network wide visibility and segmentation - ivth o
+
+*  Public Key Infrastructure (PKI) certificate management
+* Plugand play from day 0. |
+
+Use case 5 - Security | L
+
+* The tools we use to safeguard our physical and virtual tools have developed as
+
+~ result of the numerous technical advances that have taken place over the past ten
+years, much like the tools we use to grow our crops or build our automobiles,
+
+* However, in fact, firewalls are merely cne of almost every security device or
+
+~ component that will ultimately be virtualized utilising network functions
+ virtualization as well as software-defined networking. Virtual firewalls are now
+available from several security providers to secure VMs.
+
+e The concept of centralized control mechanisms and evenly dispersed enforcement
+is one of the key benefits of adopting virtualized security; for these two reasons
+alone, businesses wishing to strengthen their security have flocked to research
+these sorts of security solutions.
+
+* The world may not have been fully conquered by network function virtualization
+just yet, but as the world becomes more virtual and NFV (as well as SDN) gain
+traction, we may soon witness a day when virtual security, as well as the other use
+cases featured on this list, become the norm rather than |
+
+the exception.
+
+Challenges for Network Functions Virtualization
+
+Scanned with CamScanner
+
+
+--- Page 42 ---
+HIOUE md“s“y‘smdﬂd hardwaxe am;l qoftwa:e are to;m ounc
+
+. px NFV, service providers can nevertheless experience vmm Software
+- components must be completely interoperable in order for it to function. Tk
+~ resultant network ought to provide quick scalability, flexibility - and esource
+allocation advantages. In order to avoid SDN and NFV implementation difficult : )
+and to make it possible for end-to-end services to operate multi vendor networks
+made up of both physical and v1rtua1 components, hybrid, vendor-agnostlc
+orchestration is essential. wlE
+
+e In order to create market-ready, VNF-based service packages that prevent VNF
+vendor lock-in and allow service providers to immediately launch new services,
+the market also needs more thorough preparation among partnérs. Full access to
+interchangeable Virtual Network Functions (VNFs) that may be used effectively
+and affordably should be made possible via NFV.
+
+2. Business cases ,
+¢ The idea that software applications runmng on common platforms would be able
+to achieve throughput and latency requirements without using a considerable
+amount of CPU resources is unrealistic. Operators are aware that the cost
+reductions brought about by NFV are outweighed by the requirement to install full
+racks of computing resources to address an issue that could prevmusly be handled
+
+by a single device. The expenses of the CPU and servers, rack space and electricity
+needed to match the performance footprint of a dedicated solution wind up being ' i
+on par with or even more expensive than alternatives that were Speciﬁcally ¥ :
+
+intended for the task. Operational simplicity and much lower total cost of
+
+ownership are still only concepts.
+
+3. Lack of capabilities
+* It is not surprising that NFV offers a chance to lower OPEX and 1mprove the
+
+customer experience. The availability of vendor solutions and the slower adoption
+of technologies allowing service providers to acquire the skills required to
+operationalize SDN/NFV are two challenges. Service provider's networks
+transition from hardware-centric, semi-static connectivity platforms to software-
+driven, dynamic service platforms as a result of the adoption of SDN and NFV. 1ti 15 # j ‘
+
+Scanned with CamScanner
+
+
+--- Page 43 ---
+~ network and IT as a problem. The organisati
+
+e
+
+5. Lack of standards
+
+7. Security and privacy
+
+golsn s
+
+ain barriers weren't regulatory concerns. However, respondents did i
+of a governance structure that encourages commmu’&'éﬁa‘ﬁ between.
+ional tasks of the network and 1
+departments should synchronise or integrate as the industry transitions to a mog,
+software-oriented strategy. The blending of network and IT tasks goes against hoy,
+most service providers are set up, yet it is now widely accepted. e T
+
+e Standards were referred to as a srhall impediment, although they are frequem]yu
+mentioned as widespread impediments to innovation. In many instances,
+
+standards help innovation catch up. While standards organizations are trying to
+
+make their procedures more efficient, they frequently find it difficult to keep up
+with the fast-paced competition in the sector. Service providers and their strategic -
+partners are under pressure from this dynamic to invest in and create multi
+vendor, end-to-end solutions that can automatically adapt to standards over time.
+
+6. Management and orchestration issues
+
+e SDN/NFV delivers dynamism and scalability, which makes administration and
+orchestration in multi tenant environments challenging. The network should
+handle circumstances when resource needs fluctuate significantly in comparati\}ely
+short durations in order to flexibly distribute resources on-the-fly. To meet this
+
+demand, a flexible, automated and programmable orchestration platform is
+necessary.
+
+e New potential attacks on software networks are made possible by the open
+interfaces that facilitate the network's programmability. This necessitates the
+_development of a standardized, multi-level security architecture that includes -
+guidelines and controls for software integrity, remote attestation, dynamic threat
+detection and‘ mitigation, user authentication and accounting managemeﬁ*
+SDN/NFV-related security and privacy issues are now a problem.
+;
+
+TECHNICAL PUBLICATIONS® . an up-thrust for knowledae
+
+Scanned with CamScanner
+
+
+
+--- Page 44 ---
+« To help clients create scalable, dependable, secure and affordable netw;_orki for
+
+their organisations, Juniper Networks designs, develops and dxsfﬂimies'ﬁfgg‘ &
+performance network solutions and services. The firm is divided into two divisions
+: Product and services. Virtual private networks, service control gateways,
+orchestration and automation and virtualized network functions are just a few of '
+the network function virtualization options provided by Juniper Networks.
+e The corporation is present in a number of areas, including the Ainericas, Asia- 8
+Pacific, the Middle East and Africa, thanks to its subsidiaries and a robust "
+distribution network. Mist System, Inc.,, AppFormix, Inc. and Aurrion, Inc. are a
+few of its subsidiaries (U.S.). |
+
+Ericsson A
+¢ One of the top suppliers of ICT to service providers is Ericsson. The business offers
+network assistance and is a pioneer in 4G and 5G mobile technology. It does
+business through the network, digital services, managed services, and other
+business segments. The company's portfolio includes telecom services, internet and
+multimedia solutions for operators, businesses and the media sector, as well as
+mobile and fixed network infrastructure. 5 i
+
+* The corporation has operations throughout the Americas, Asia-Pacific, the Middle
+East, and Africa thanks to its subsidiaries and robust distribution network. Among
+its subsidiaries are Cenx, Inc., Ericsson-LG (South Korea), and Ericsson-Nikola
+Tesla (Croatia) (U.S.). \
+
+Cisco Systems, Inc.
+
+* The Internet is powered by a wide variety of technologies that Cisco Systems
+creates and sells. Its intent-based solutions are continually learning and adapting
+across networking, security, collaboration, apps and the cloud to give customers a
+highly secure, intelligent platform for their digital company. The business is
+divided into four divisions : Infrastructure platform, services, application, security,
+and others. Advanced technologies are provided by the corporation, including IP
+technology, security, home networking, optical networking, storage area
+networking and wireless portals.
+
+TECHNICAL PUBLICATIONS ~ - an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+--- Page 45 ---
+ob. er ininformation technology, HewlettPackard offers o ., mers,
+Qﬂ mgdium-sxzed businesses, major corporatlons and the health and e cat
+;sectors a comprehenmve range of hardware and related services. The firm STovide
+a range of network function virtualization services, including era ,':]m{‘
+research, data-dnven security enhancement and ongoing security malntenance
+
+e The firm is present throughout I North America, Europe, Asia-Pacific, La’an
+
+| and the Middle East and Africa thanks to its subsidiaries and robust dlstn ion
+E network b
+e The Hewlett Packard Enterprise has a number of subsidiaries, including Voodoo]’c
+(Canada), Apogee Corporation Limited (UK), and Indigo America, Inc. (U.S.). ol
+
+il
+
+90
+
+Fujitsu, Ltd. k
+e The top ICT firm in the world, Fuptsu provides a w1de selection of technologledl |
+goods, services and solutions. Technology Solutions, Ubiquitous Solutions, and
+Device Solutions make up the company's three business segments. The firm 1
+provides a range of network function virtualization solutions, including those for
+networks, storage, computation and virtual evolving packet cores. |
+* The corporation has operations throughout the Middle East and Africa, Europe,
+Asia and North America thanks to its subsidiaries and robust distribution network:
+Fujitsu FSa$, Inc., Nifty Corporation, PFU Limited and FDK Corporation are a few
+of its subsidiaries.
+Affirmed Networks
+¢ Affirmed Networks, a 2010-founded company with its headquarters in
+Massachusetts, strives to change and advance intelligence in mobile data netWo‘ks'
+- The business creates a mobile network platform that offers network slicing, |
+~ probe and analytics and IoT virtualization solutions. The company's mobile
+~ capabilities include cloud-native mobile core solutions, virtualized DPI and Gi &
+- services, optimised IoT access, Wi-Fi and service automation. The C01'P°mtwn B
+
+~ Operations in North America, Europe and Asia-Pacific thanks to its subs
+and robust distribution network. |
+
+- &n up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+--- Page 46 ---
+it Pimeez % the implmghﬁm,.oj slized- ol
+
+netmrk operators all over the world. For commwﬁatlml mﬁm iders, the
+
+firm focuses on speeding and redefining the change of mobile netwuk ""\“' :
+
+The firm offers a range of network function virtualization technologies, h“h
+
+virtualized radio access network, evolved packet core and packet compute. e
+
+o The corporation is present throughout North America, Europe, Asia-Pacific, Iﬂﬁn i
+America, the Middle East and Africa thanks to its subsidiaries and robust
+distribution network. Its subsidiaries include Aquto Corporation, Ranzure
+Networks, Inc. and Netonomy, Ltd. (U.S.).
+
+Huawei Technologies Co., Ltd.
+
+e Leading ICT solution supplier Huawe1 Carrier Business, Enterprise Business,
+Consumer Business and Others make up the company's four business segments. It
+provides services for network function virtualization, including EC IoT solutions
+and services for intelligent computing.
+
+e The corporation is present across North America, Europe, Asia-Padific, the Middle
+East, and Africa thanks to its subsidiaries and robust distribution network. Huawei
+Device Co., Ltd., Huawei Machine Co., Ltd., and Shanghai Huawei Technologles
+Co., Ltd. are a few of its subsidiaries.
+
+Ribbon Communications, Inc.
+¢ Real-time communications industry pioneer Ribbon provides cutting-edge
+software solutions. The firm is divided into two divisions : Product and services.
+The business provides next-generation communication technologies, such as
+internet protocol, session initiation protocol, software-defined WAN (SD-WAN) for
+unified communications and communication platform as a service. Ribbon
+function virtualization services and solutions,
+
+provides a range of network
+t edges, virtual mobile cores, virtual internet
+
+including next-generation intelligen
+L - protocols and mobile network evolution.
+
+* The corporation has operations throughout North America, Europe, Asia-Pacific,
+the Caribbean and Latin America and the Middle East and Africa thanks to its
+subsidiaries and robust distribution network. Genband LLC, I Taqua Inc, Network
+
+- Equipment Technologies Inc and Performance Technologies Inc. are a few of its
+
+-subsidiaries (U.5.).
+
+- an un-thrust for kmnbdm
+
+TEAHNICAL PUBLICATIONS
+
+Scanned with CamScanner
+
+
+--- Page 47 ---
+iR G ‘netororking. W W ‘spmbvationt Gl
+ﬂ_, , ,_T; y and economics of Ethet with the dependability and capaaty of
+b‘“’mﬁz all while delivering the top network automation in the sector
+~ business is divided into four divisions : Global services, platform software ar
+* services, automation software and services and networking platform. The Blsine
+also provides network function virtualization solutions such a virtual Wl.p-"
+
+- gateway, virtual evolved packet core and virtual radio access network.
+
+* The corporation is present throughout North America, the Caribbean and Latin
+America, Asia-Pacific, Europe, the Middle East and Africa thanks to its subsidiaries
+and a robust distribution network. Its subsidiaries include Packet Design and
+Centina Systems (U.S.)
+
+Comparison of NFV and NV
+
+NFV
+
+It outlines the key components of the complete
+network, including its infrastructure, services
+
+and available applications. It provides network
+policies that control how network resources are
+allocated and used. The hypervisor coordinates
+and regulates lower-level network operations.
+
+It is architecture is centered on data centers.
+
+By centralizing network control and
+programmability, NFV separates the control
+~ plane and the data forwarding plane,
+
+3y centralizing network control and
+programmability, SDN isolates the contro]
+plane from the data forwarding plane.
+
+- TECHNICAL PUBLICATIONS®
+
+R | _ ~@n Up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+--- Page 48 ---
+coiporate IT serves as the SDN Buslne;s
+~ Initiator.
+
+Industry-standard servers or switches are used
+.~ to execute SDN applications.
+
+SDN reduces network expenses further by
+doing away with the requirement for pricey
+- switches and routers.
+
+Review Questions with Answers
+
+1. Define NFV. (Refer section 5.1)
+2. How Network Functions Virtualization (NFV) works (Refer section 5.1.1) Marks 5
+
+3. What are benefits of network functions virtualization (Refer section 5.1.2)
+4. What are the risks of network functions virtualization (Refer section 5.1.3) Marks 5
+
+5. Explain NEV architecture. (Refer section 5.2)
+6. What are the challenges for network functions virtualization (Refer section 5.2)
+7. Comparison of NFV and NV (Refer section 5.7) | Marks 6|
+
+TECHNICAL PUBLICATIONS - an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+--- Page 49 ---
+Scanned with CamScanner
+
+
+
+--- Page 50 ---
+N }" ""! i "; ing entails a controller that resemble
+;:uiaparts an meStack.APL mappmg to its own internal s
+)'1 A
+
+APLto SDN apphcatlons like the one in Fig. 6.1.1 (originally intended to be IF- ij
+
+’ based.) A data centre orchestration application is shown in the Fig. 6.1.1 that may
+- used to set up virtual routers on hosts in order to connect the overlay mstanm
+
+SDN system
+
+IF-MAP
+
+BGP, DMI, XMPP
+
+Flg 6.1 1 ngh-lovol oporatlon of Junlpor networks virtual network system SDN contro"‘f
+‘system
+
+¢ The controller is a multi-node system with several different subsystems. The g0
+this strategy is to promote high availability, scalability and extensibility. The §
+B can manage scale out server modules for analytics, Conﬁgurauon AN con'- I
+
+Scanned with CamScanner
+
+
+--- Page 51 ---
+R Facilitates the <.tompiler that uses the high-level data model to exchange API requests
+b for network actions into low-level data model for implementation via the control code.
+
+Control |
+
+» The BGP speaker for horizontal scale distribution between controllers (or |
+administrative domains) and the implementer of the low-level data model (L3VPN :
+network primitives distributed via XMPP commands-VRFs, routes, policies/filters).
+
+This server also collects statistics and other management information from the agents it
+
+manages via the XMPP channel.
+
+BGP, a defined protocol enabling horizontal scalability and the possibility for multi
+
+vendor interoperability, is used by the control node to distribute network state. In the
+
+near term, nevertheless, compatibility with already-existing BGP networks makes it
+
+more valuable. The design incorporates lessons learned from more contemporary,
+open-source architecture projects that deal with massive, volatile data storage and
+communication across modular component parts. The contrail solution makes use of
+
+tested internal system open source solutions.
+
+IETF(Internet Engineering Task Force) SDN Framework
+e The IETF is looking into SDN models for workable technological solutions. An
+SDNRG (IRTF SDN Research Group) session at IETF 86 in Orlando, Florida,
+included multiple presentations on various potential solutions. The seminar
+discussed Network Function Virtualization (NFV), which entails utilising the
+virtualization technology of network equipment, as well as a wide range of other
+
+relevant issues, including the examination of OpenFlow. .
+
+* A brief introduction to the forwarding and control element separation (For CES) !
+
+protocol, which is theoretically comparable to OpenFlow, was also given. It is
+
+~intended that this thorough analysis would enable SDNRG to offer suggestions on
+
+the architecture of the protocol, network and service and that it will speed up in-
+
+depth debate.
+
+TECHNICAL PUBLICATIONS - an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+--- Page 52 ---
+Scanned with CamScanner
+
+
+
+--- Page 53 ---
+©and wmﬂns system that Suppom J.va."n\e foﬂm\g}wu are :
+~ controller, an application of the Software Defined Network (SDN) concept :
+
+4"
+
+1. Maven : OpenDaylight employs Maven for easy build automaﬁon. Ma I makes :
+use of pom.xml (Project Object Model) to script the dependencies among bundles
+and describe what bundles to load and start.
+
+2. OSGi : This framework is the back-end of OpenDaylight as it penmts dyna:mcally
+
+loading bundles and packages JAR files and binding bundles jointly for exchanging
+information.
+
+3. JAVA interfaces : Java interfaces are used for event listening, specifications and
+forming patterns. This is the main way in which specific bundles implement call-
+back functions for events and also to indicate awareness of specific state.
+
+4. REST APIs : These are northbound APIs such as topology manager, host tracker,
+flow programmer, static routing and so on.
+
+* Applications use the open northbound APIs that the controller exposes. The
+
+northbound APIs enable both bidirectional REST and the OSGi framework.
+
+- Applications that run in the same address space as the controller utilise the OSGi
+
+framework, but those that do not (or even do not run on the same system as) the
+
+controller use the REST (web-based) APIL. The apps include the business logic and
+algorithms. The controller is used by these applications to acquire network information,
+analyse data using its algorithm and then coordinate the implementation of new rules
+across the network. Multiple protocols, including OpenFlow 1.0, OpenFlow 1.3, BGP-
+
+LS and others, are supported as plugins on the southbound. At first, the Opq\payhght
+
+controller used an OpenFlow 1.0. southbound plugin. Qher OpenDaylight contributors
+
+start adding up to the controller code. These modules are linked dynamically into a
+
+Service Abstraction Layer (SAL).
+
+* The SAL exposes the services that the modules developed north of it are designed to
+
+use. Regardless of the underlying protocol used between the controller and the
+
+network devices, the SAL determines how to provide the desired service. As OpenFlow
+and other protocols develop over time, this safeguards the application’s investment.
+
+The controller must be aware of the devices in its domain, including their capabilities,
+
+reachability and other factors, in order to control them. The Topology Manager
+
+maintains and manages this data. The creation of the topology database for the
+
+Topology Manager is assisted by other components including ARP handler, Host
+
+rmd P!
+—ALINIAAL DRI IMATIANCS an 1in thros
+
+Scanned with CamScanner
+
+
+
+--- Page 54 ---
+‘. “
+
+q” Initlstrators Have E{“&-\ icé of ising a single protocol or h cmnbiﬁa'h %
+
+"'ﬁ lle complica'teﬂ {85t as they arise thanks to this modular and 1 e
+
+Mtegy All SDN systems, including OpenFlow, Open VSwitch (OVS) D3 ’
+
+h’(bm), NETCONF, and BGP, are supported by the platform. B '_
+
+* The open communications protocol that enables the SDN Controller to interact w
+forwarding plane and modify the network is defined by the OpenFlow protocot
+
+- is regarded as the first SDN standard. Businesses can better adapt to their cl'ian 4:1
+demands and have more control over thelr networks thanks to this.
+
+OpenDaylight (ODL) Archltecture
+
+. OpenDayhght is a modular open platform for customizing and automating networks --
+any size and scale. The OpenDaylight Project arose out of the SDN movement, witha
+clear focus on network programmability. It was designed from the outset as a
+
+foundation for commercial solutions that address a variety of use cases in ex:slm&
+network environments.
+
+ODL architecture has three layers :
+1. Southbound plugins : Used to communicate with the network devices.
+
+2. Core Services : Which can be used by Service Abstraction Layer (SAL) Whld'l is
+based on OSGi to help components going in and out of the controller while the
+controller is running.
+
+3. Northbound interfaces : Which allows operators to relate high-level pohaes to
+network devices or integration of ODL with other platforms.
+
+1. Modularity and extensibility ‘;
+
+¢ ODL's built-in techniques make it easier to ; join code modules The controller uses:
+OSGi containers to load bundles dynamically, giving it a very flexible way to 2 add
+functionality. | o
+
+. ~ TECHNICAL PUBLICATIONS® . |
+s _ BLICATIONS .- an up-thrust for knowleage
+.;h‘_‘l—_ﬂ-"%—'——_._ b . : :
+
+Scanned with CamScanner
+
+
+--- Page 55 ---
+aseajay uabAxQ ybylequady
+
+1
+
+Fig. 6.3.
+
+ODL Architecture
+
+¢
+T
+8
+<
+I3
+X
+o
+&
+-
+s
+=
+£
+1
+<
+c
+«
+.
+v
+=<
+<
+=
+S
+S
+T
+=
+Q
+<
+<
+<
+S
+w
+(=
+
+Scanned with CamScanner
+
+
+--- Page 56 ---
+res emb!lng multi-site deployments foi
+‘speed and | fault mletance, ODL's most recent version si
+platform's scalability and resilience.
+» Cluster scalability : AKKA, a distributed datastore, distributes the current SDN
+state and enables controllers to failover in the case of a cluster split, while ODL has 1
+internal capability 'fof cluster maintenance.
+
+e However, when a cluster expands, communication and coordination tasks rise
+ements for each additional cluster member.
+
+gniﬁcantly improves ,
+
+quickly, limiting performance improv
+e Scalability of architecture : To manage traffic flows across the SDN islands, ODL
+has native BGP routing capabilities.
+e OpenDaylight's integration with OpenStack enabled multi-site networking and
+improved networking performance.
+
+3. Interfaces
+e Southbound : A wide range of Southbound interfaces are supported, mcludmg _
+OpenFlow, P4, NETCONF, SNMP, BGP, RESTCONF and PCEP. '
+e Northbound : ODL provides the broadest selection of gRPC and RESTful
+northbound interfaces. The OSGi for applications running in the same address
+space as the controller and the common RESTful interface are among the
+northbound interfaces offered by ODL. To make integration and development
+
+tasks easier, Northbound interfaces are graphically represented using DLUX.
+
+4. Telemetry |
+e ODL includes just a small amount of telemetry-related capabilities at the project
+level.
+e Although there are steps toward offering northbound telemetry feeds with the
+most recent development release, they are still in the early stages of design and are
+not expected to be ready for production in the near future.
+
+5. Resilience and fault tolerance
+e Similar to ONOS, the ODL fault tolerance method requires an odd number of SDN
+_controllers to offer fault tolerance in the system. In the case of a master node
+failure, the network would pick a new leader to assume control. These controllers
+
+TECHNICAL PUBLICATIONS
+
+= an up-thrust for knowiedge
+
+Scanned with CamScanner
+
+
+--- Page 57 ---
+6. Pro ' ' * iy " tefug 9";1101- 51 Prioe | "*‘l‘ > o
+Hee %ﬂmalmtuaseviewpomommmmwmmnvr ‘ol yr geRe
+T. communw g '“Q -
+‘e The second SDN controller in the Linux Foundation Networkmg fanuly 19 “M
+
+ODL. Of all the open source SDN controllers on the market, this proyect has the 3
+
+broadest community support and numerous well-known firms are actively
+engaged in its development. TPEL S b0
+
+Floodlight Controller
+
+* Anew open and programmable network is presented by Software Defined Networking
+
+(SDN), which combines connection-oriented technologies with routing overlay
+technology. Bringing control planes into a logically centralized SDN controller, which
+
+may then function as a network operating system and decoupling control and data
+
+planes from network devices.
+
+* This is Floodlight controller, an OpenFlow controller. While applications built on top of
+the Floodlight controller implement various capabilities to address various user
+demands across the network, the Floodlight controller implements a set of common
+functionalities to control and query an OpenFlow network. Floodlight is made up of
+application modules that implement solutions for various problems and controller
+modules that implement the essential network functions that a software defined
+
+network would expose to apps.
+
+Salient Features of Floodlight Controller™"
+¢ Developers may benefit from the Floodlight controller since it is designed in Java
+and enables them to quickly adjust software and construct apps.
+e REST APIs are included, which make it simpler to programmatically interact with
+
+the product. Additionally, the Floodlight website provides coding samples to help _
+
+developers create the product.
+* The Floodlight controller has been tested with physical and virtual OpenFlow-
+compatible switches and it can coexist with the resources presently available to
+
+¥ RN
+
+organizations. ! Y "‘&
+
+Scanned with CamScanner
+
+
+
+--- Page 58 ---
+,#" iﬂbodllght can be run as the network backend for OpenStack using a ’ﬁ’ 23
+g h!fbﬁ! that exposes a networking-as-a-service model with a REST API
+""Flooaiight offers.
+
+FloodLight Platform
+Itis an Open source SDN controller platform with followmg features »
+1. Apache-licensed |
+2. OpenFlbw protocol
+3. Javabased
+4. Enterprise class controller .
+
+Application tier . |
+
+Circuit
+pusher
+
+switch N‘iiore ﬂoodligﬁt applicationé
+
+Control plane tier
+
+Data plane tier |
+
+OpenFlow
+hypervisor OﬁenFlow
+switches physical
+
+switches
+
+Fig.6.4.1: FloodLight overview k
+
+TECHNICAL PUBLICATIONS
+
+- an up-thrust for kwo
+
+Scanned with CamScanner
+
+
+--- Page 59 ---
+2. Flow installation/deletion - VA bl desg balsolbnateds dibe
+
+3. Stats query
+
+e LLDP protocol
+
+* Install/modify/delete a flow on aswitch | laae
+e Flowis deﬁnegl as all packets with the same match.
+
+e Packet counts
+¢ Flow counts
+
+e Port stats query -Etc.
+
+Bandwidth Calendaring (BWC)
+
+A better use of network resources is made possible by new services made possible by
+software defined networking. A common example of this is bandwidth calendaring
+(BWC), which uses information about future traffic to best pack the developing needs
+over the network. ’
+
+To investigate a typical BWC scenario in which a network operator must provide
+bandwidth to meet specified, time-varying needs at the lowest possible cost and within
+a predetermined time window. Low complexity strategies for the breakdown of the
+original mixed integer problem into smaller ones by taking use of the issue's structure.
+Numerical findings show that the suggested solution methodology is almost optimum
+and performs more than 20 % better than conventional techniques based on linear
+programming relaxations and randomized rounding. |
+
+The network architecture of data centers has undergone a significant transformation
+because of software-defined networking (SDN). Programmable data planes are offered
+by SDN and may be set up from a distant, logically centralized controller. Additionally,
+carrier network operators and Internet service providers may be able to utilise their
+network resources more effectively thanks to the great flexibility and reprogramming
+ability of SDN infrastructures.
+
+In the long run, this would allow for new access services like Bandwidth Calendaring i
+(BWC), which entails allocating network resources for Sizable. fl.lture bandwidth k"
+bookings. Wide Area Networks (WAN) are essential for the fur}chom:.\g of businesses |
+and Over-The-Top (OTT) service provide;s. To prevent congestion, this network mus‘t ¥
+
+TECHNICAL PUBLICATIONS - an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+
+--- Page 60 ---
+currentl}; be 6ver;pm§isioned in accordance with anticipated pe.ak traffic, B‘,‘Sine&,s
+
+may now dynamically modify connections in accordance with their demands thankg ¢,
+
+SDN.
+
+‘o Currently, in order to minimize congestion, this network must be over-provisioned i,
+accordance with the anticipated peak demand. With the help of SDN, businesses may
+now dynamically change connections to suit their needs. They are therefore solely
+
+- responsible for paying for the network resources they actually utilize. The broaq
+adoption of such services is hampered by the absence of automated procedures that
+- accommodate time-varying bandwidth requirements.
+
+* Reservations for bandwidth may be divided into two groups, generally speaking,
+Unpredictable bandwidth needs that are much less than the available capacity make up
+the first group. They often happen when a consumer encounters an unforeseen spike in
+traffic. The second categbry is the outcome of huge data transfers, which often take up
+a significant portion of the network's capacity over a prolonged period of time.
+
+&
+g TSN A S SR S R o o o e v e e o A0 S . e, e e v s e o e AR
+
+| 66 |
+
+i i {
+
+Band § | : :
+
+idth ) i
+
+Request 1 et . - St :
+' Flexibility | : _ f
+
+o ] T Tlme ;
+;LV_____L_) {
+
+—————————
+
+P e e e s o e - - -y
+
+I
+Band 5,G :
+Request n width 1G l | l 26
+I ! :
+i : Time f
+
+NS Eh wn s e e n e e e e W
+
+Fig. 6.5.1 : A Bandwidth calendar
+
+» Many of these criteria may tolerate delays. As a result, the associated bandwidth
+reservations are flexible and may be arranged at any moment throughout a
+predetermined time window. The beginning time of each bandwidth request must be
+determined using the calendar of requests shown in Fig. 6.5.1 and traffic engineering
+tunnels must be set up to suit their variable bandwidth needs.
+
+* In this essay, we discuss the challenge a network operator has when deciding how to
+
+F,.@f " the traffic accepted volume,
+
+| TECHNICAL PUBLICATIONS '
+
+- an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+--- Page 61 ---
+laced by the tasks and the orchestration of processes. ‘wq%“ht Al
+
+1ol
+
+"h‘-}‘i'a_ X
+
+oo
+
+center orchestration
+g v g TR I SO
+
+IT admins
+
+Containers
+
+‘Configuration Performance Load Security
+balancing scaling poiicies
+
+Automation
+
+Fig. 6.6.1 : Data center orchestratlon
+
+o Fig. 6.6.1 Shows the process of data center orchestration. The automation of tasks is
+used by data centre orchestration software to carry out procedures, such installing new
+
+servers. An agile DevOps strategy is made possible by automation systems that
+
+organize data centre operations, allowing for continuous application enhancement.
+
+e Think about a band's vocalists or instruments. Similar to how software defined
+
+programmes each have a distinct purpose, each has its unique sound. But when they
+
+blend nicely, a distinctive sound is created. |
+* The concept of orchestration describes how many activities might be combined to serve
+
+a bigger goal. It produces a highly functional and responsive data centre by organizing
+
+all the duties of numerous services. ‘ | |
+s The data centre is under increasing strain as a result of the enormous volume of data ' .
+
+moving to cloud computing. A centrally managed data centre is required.
+
+TECHNICAL PUBLICATIONS ~ - an up-thrust for knowlodgo
+
+Scanned with CamScanner
+
+
+--- Page 62 ---
+ Data centre orchestration solutions provide the following advantages :
+
+B ’
+
+Streamlined creation of resources in the public and private clouds. |
+
+A shorter time lag exists between a business demand and the point at which the
+infrastructure can provide it.
+
+ The IT department has less time to deliver a domain-specific environment.
+
+A framework for controlling data transferred between a business process and
+application is provided by data centre orchestration systems.
+
+They employ the following capabilities :
+
+N N
+
+Tracking and publishing APIs for automatic updates of metadata management.
+Updating policy enforcement and providing alerts for corrupted data.
+Intégrating data services with cloud services.
+
+Scheduling and coordination of data services. .
+
+Leveraging of distributed data repository for large data sets.
+
+Data Center Orchestration Tools
+
+e Popular data centre orchestration and automation solutions for data centre and cloud
+settings include the ones listed below : 3
+
+o
+
+o
+
+o
+
+~environments. Lets every member of the IT ¢
+
+Chef - Uses a client-server architecture and is based on Ruby. Presents the
+infrastructure as a code.
+
+Docker - Features isolated containers, which allows the execution of many
+applications on one server.
+
+Puppet - Built with Ruby and uses an agent/primary architecture. Created to
+automate tasks for system administrators,
+
+Ansible - An agentless configuration management tool. Created to push changes
+and re-configure newly deployed machines. Has an ecosystem conducive for
+writing custom apps. The platform is written in Python and allows users to script -
+commands in YAML.,
+
+Vagrant - Helps build, configure and manage lightweight virtual machine
+
+eam have identi lopment
+B orante. ldentical develop
+
+[ECHNICAL PUBLICATIONS - an up-thrust for knowledge
+
+Scanned with CamScanner
+
+
+--- Page 63 ---
+in Open Daylight (ODL) architecture. (Refer section 63.1)
+
+..mﬁmgmmmmw
+6. Explain salient features of floodlight controller. (Refer section 6.4.1)
+7. Explain bandwidth calendaring (BWC) . (Refer section 6.5)
+9. Explain advantages of data center orchestration systems (Refer section 6.6.1)
+10. Explain data center orchestration tools. (Refer section 6.6.2)
+
+Scanned with CamScanner

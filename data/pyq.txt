@@ -1,0 +1,24 @@
+[Apr'2023] Explain SDN architecture with neat diagram.
+[Apr'2023] Differentiate between software defined network (SDN) and traditional network
+[Apr'2023] Explain Cerntralized and distributed control and data planes
+[Apr'2023] Explain SDN interfaces with neat diagram.
+[Apr'2023] Explain SDN Controller with neat diagram.
+[Apr'2023] Explain physical ports, logical ports and reserved ports in openflow switches.
+[Apr'2023] Explain various openflow message types.
+[Apr'2023] Explain flow table with neat diagram.
+[Mar'2024] Explain SDN Architecture with neat diagram. Why the software defined networks are important?
+[Mar'2024] How SDN works with centralized and distributed control and data planes?
+[Mar'2024] Differentiate between traditional network and software defined networks
+[Mar'2024] Explain traditional network architecture with neat diagram. State the different challenges in traditional network?
+[Mar'2024] Enlist openflow protocols.Explain Proactive and reactive flow.
+[Mar'2024] Explain the working of openflow switch with controller.Explain the different openflow switch components
+[Mar'2024] Explain the openflow pipeline processing in detail.Ensure the advantages and disadvantages fo openflow.
+[Mar'2024] Define the terms related to openflow: i. Flow table ii. Instructions iii. Action Set iv) Matching
+[Mar'2025] Explain the SDN architecture with neat diagram.
+[Mar'2025] State challenges of traditional network
+[Mar'2025] Differentiate between software defined networks and traditional network.
+[Mar'2025] Explain centralized and distributed control and data plane
+[Mar'2025] Explain messaging between controller and switch
+[Mar'2025] Explain openflow in detail.
+[Mar'2025] Explain SDN controller with diagram.
+[Mar'2025] Explain ports in openflow switch.

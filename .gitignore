@@ -1,0 +1,21 @@
+# Local secrets
+.env
+backend/.env
+
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# Local virtual environments
+.venv/
+venv/
+env/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Legacy duplicate folder; deployable copy is frontend/assistant
+Virtual Assis/
