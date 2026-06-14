@@ -8,7 +8,7 @@ os.environ["TESSDATA_PREFIX"] = r"C:\Users\ADMIN\scoop\apps\tesseract\current\te
 pytesseract.pytesseract.tesseract_cmd = r"C:\Users\ADMIN\scoop\apps\tesseract\current\tesseract.exe"
 POPPLER_PATH = r"C:\Users\ADMIN\scoop\apps\poppler\current\bin"
 
-PDF_PATH = "../data/#3 SDN Technical.pdf"
+PDF_PATH = "../data/3-SDN-Technical.pdf"
 OUTPUT_PATH = "../data/textbook.txt"
 
 def extract_text_ocr(pdf_path):
