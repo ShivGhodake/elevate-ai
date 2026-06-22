@@ -5,7 +5,7 @@ from langchain_groq import ChatGroq
 load_dotenv()
 
 llm = ChatGroq(
-    groq_api_key=os.getenv("GROQ_API_KEY"),
+    groq_api_key=os.getenv("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"),
     model_name=os.getenv("GROQ_MODEL", "llama-3.1-8b-instant")
 )
 
