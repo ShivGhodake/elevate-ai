@@ -6,7 +6,7 @@ load_dotenv()
 
 llm = ChatGroq(
     groq_api_key=os.getenv("GROQ_API_KEY"),
-    model_name=os.getenv("llama-3.3-70b-versatile")
+    model_name="llama-3.3-70b-versatile"
 )
 
 def run_llm(prompt):
